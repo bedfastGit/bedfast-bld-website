@@ -1,0 +1,73 @@
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    
+}
+.menu-bar {
+    background-color: RGBA(255, 250, 250, 0.88);
+}
+.nav-link {
+    font-size: 16px;
+    margin: 3px;
+    color: darkslategray!important;
+    font-weight: 400;
+}
+.navbar-nav {
+    text-align: right;
+    margin-right: 20px;
+}
+.menu-bar .navbar-toggler {
+    padding-right: 20px;
+    outline: none!important;
+    border: none!important;
+}
+.navbar .fa {
+    color: black!important;
+    font-size: 26px;
+}
+.nav-link:hover {
+    font-weight: 600;
+    border-bottom: 1px solid #EA488C;
+}
+.navbar-brand img {
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: 1000px){
+    .nav-link:hover{
+        border-bottom: none!important;
+    }
+}
+body{
+    background-image: linear-gradient(-90deg, #8B4E90, #EA488C)
+}
+.whitebg{
+    background-color: RGBA(255, 250, 250, 0.86);
+    border-radius: 5px;
+}
+.snowtext{
+    color: snow!important;
+}
+.boldsnowtext{
+    color: snow!important;
+    font-weight: 600;
+}
+hr{
+    border-top: 1px solid snow!important;
+}
+footer{
+    color: snow;
+}
+.pics{
+    border-radius: 5px;
+}
+.btn-light{
+    font-weight: 500!important;
+}
+.himg:hover{
+    
+    width: 1000px!important;
+}
