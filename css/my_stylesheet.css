@@ -5,12 +5,24 @@
     
 }
 .fixed-ban{
-    background-image: url(../images/hardware-art/4000x-anime-closeup.jpg);
+    background-image: url(../images/1x1-4000x/closeup-blue.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-attachment: fixed;
-    height: 370px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+.fixed-ban-vid{
+    background-color: rgba(0, 0, 0, 0.51);
+    backdrop-filter: blur(4px)!important;
+    text-align: center;
+    overflow-y: hidden;
+    height: 650px!important;
+}
+.bg-video{
+    position: relative;
+    bottom: 180%;
+    width: 100%;
 }
 .fixed-ban div{
     padding-top: 8%;
@@ -41,7 +53,6 @@
 }
 .nav-link:hover {
     font-weight: 600;
-    border-bottom: 1px solid #EA488C;
 }
 .navbar-brand img {
     height: 80px;
@@ -56,16 +67,32 @@
     .fixed-ban{
         height: 400px;
     }
+    .fixed-ban-vid{
+        height: 600px!important;
+    }
     .fixed-ban div{
         padding-top: 20%;
     }
+    .bg-video {
+        width: 100%!important;
+        height: auto;
+        position: relative;
+        top: -10%;
+    }
 }
 body{
-    background-image: linear-gradient(-90deg, #8B4E90, #EA488C)
+    /*background-image: linear-gradient(-90deg, #8B4E90, #EA488C)*/
+    background-image: linear-gradient(-90deg, #041329, #2d33c3, #041329)
 }
 .whitebg{
     background-color: RGBA(255, 250, 250, 0.86);
     border-radius: 5px;
+}
+.whitebg h2{
+    text-align: left;
+}
+.whitebg a{
+    color: #0e4fff;
 }
 .snowtext{
     color: snow!important;
@@ -76,6 +103,7 @@ body{
 }
 hr{
     border-top: 1px solid snow!important;
+    width: 95%;
 }
 footer{
     color: snow;
@@ -156,4 +184,31 @@ footer{
     background-size: contain;
     background-position: top;
     background-attachment: fixed;
+}
+
+/* scroll to top button */
+#mio {
+  display: none;/* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #ebebeb; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 3px; /* Some padding */
+  border-radius: 40px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#mio img{
+    width: 40px;
+}
+#mio:hover {
+    border-style: solid;
+    border-width: 2px;
+    border-color: whitesmoke;
+    box-shadow: 0px 0px 24px rgba(180, 232, 255, 0.96);
 }
