@@ -118,6 +118,14 @@ footer{
     
     width: 1000px!important;
 }
+.footer-link{
+    color: whitesmoke
+}
+.footer-link:hover{
+    color: darkgray;
+    font-weight: 500;
+    text-decoration: none;
+}
 .custom_link{
     color: #EA488C
 }
