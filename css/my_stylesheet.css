@@ -82,7 +82,8 @@
 }
 body{
     /*background-image: linear-gradient(-90deg, #8B4E90, #EA488C)*/
-    background-image: linear-gradient(-90deg, #041329, #2d33c3, #041329)
+    /*background-image: linear-gradient(-90deg, #041329, #2d33c3, #041329)*/
+    background-image: radial-gradient(#030e1d, #2d33c3, #030e1d)
 }
 .whitebg{
     background-color: RGBA(255, 250, 250, 0.86);
