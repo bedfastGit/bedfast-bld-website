@@ -20,11 +20,17 @@
 }
 
 
+.container {
+    
+}
+
+.mycontainer {
+    max-width: 1580px;
+    margin: auto;
+}
 
 
-
-
-p {
+.my-text {
     font-size: 1.2em;
 }
 
@@ -44,12 +50,15 @@ h2 {
 }
 
 .fixed-ban{
-    background-image: url(../images/1x1-4000x/closeup-blue.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    background: url(../images/1x1-4000x/closeup-blue.jpg);
+    height: 71em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-size: 160em auto;
     background-repeat: no-repeat;
-    height: 350px;
+    background-position: center top -10em;
 }
 .fixed-ban-vid{
     background-color: rgba(0, 0, 0, 0.51);
@@ -76,20 +85,52 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
 }
 #navbarNav {
-
+    /*height: 4.3em*/
 }
 
+.li-underline {
+    height: 0.3em;
+    width: 7em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vis-unerline {
+    height: 0.3em;
+    transition: 0.2s;
+    background-color: rgb(41, 189, 255);
+    animation-timing-function: ease-out;
+    transform: scale(10%);
+    opacity: 0;
+}
+
+.nav-link:hover + div div {
+    opacity: 100;
+    transform: scale(100%)
+}
 
 .nav-link {
     font-size: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     color: white!important;
     font-weight: 400;
-    
+    margin-top: auto;
+    margin-bottom: auto;
 }
+
+.nav-item {
+    height: 4.314em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between
+}
+
 .navbar-toggler-icon {
     filter: invert()
 }
@@ -117,10 +158,10 @@ h2 {
         border-bottom: none!important;
     }
     .fixed-ban{
-        height: 400px;
-    }
-    .fixed-ban-vid{
-        height: 530px!important;
+        height: 33em;
+        background-size: 35em auto!important;
+        background-repeat: no-repeat;
+        background-position: top;
     }
     .fixed-ban div{
         padding-top: 20%;
@@ -147,14 +188,17 @@ h2 {
         margin-bottom: 1em!important;
     }
     .media-container {
-        height: 40em;
-        background-size: 70em auto;
-        background-position: top 0em left -20em;
+        height: 33em;
+        background-size: 35em auto!important;
+        background: url(../images/placeholder-portrait.png);
+        background-repeat: no-repeat;
+        background-position: top;
     }
     .my-text {
         padding-left: 1em;
         padding-right: 1em;
     }
+    
 }
 body{
     /*background-image: linear-gradient(-90deg, #8B4E90, #EA488C)*/

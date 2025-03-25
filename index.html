@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="js/navbarbehaviour.js" defer></script>
     </head>
     <body>
         <!-- barra superior -->
@@ -24,16 +25,20 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="ndex.html">home <span class="sr-only">(current)</span></a>
+                        <div class="li-underline"><div data-page="index.html" class="vis-unerline"></div></div>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="builds.html">builds</a>
+                          <div class="li-underline"><div data-page="builds.html" class="vis-unerline"></div></div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="about-me.html">about me</a>
+                        <a class="nav-link" href="about-me.html">about</a>
+                          <div class="li-underline"><div data-page="about-me.html" class="vis-unerline"></div></div>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="contact.html" >contact</a>
+                          <div class="li-underline"><div data-page="contact.html" class="vis-unerline"></div></div>
                       </li>
                     </ul>
                   </div>
@@ -43,13 +48,13 @@
         </header>
         
         <!-- PAGINA HOME -->
-        <div>
+        <main>
             <!-- Background image -->
             <div class="fixed-ban">
                 <div class="container text-center">
                     <br>
                     <h1 class="snowtext">This is bedfast_bld!</h1>
-                    <p style="color: whitesmoke; font-weight: 600; text-shadow: 10;">I'm a tech enthusiast focusing on PC hardware, I try my absolute best to achieve the high standards expected from a proffesional Custom PC builder.</p>
+                    <p class="my-text" style="color: whitesmoke; font-weight: 600; text-shadow: 10;">I'm a tech enthusiast focusing on PC hardware, I try my absolute best to achieve the high standards expected from a proffesional Custom PC builder.</p>
                 </div>
             </div>
             <br><br>
@@ -61,9 +66,9 @@
             <script src="js/scroll-to-top.js"></script>
             
             <!-- texto de presentacion - Home -->
-            <div class="container text-center">
-                <p style="color: whitesmoke"> I work on every new rig as if they were my own, keeping the main focus on acustics, cooling and performance while still being aesthetically pleasing.</p>
-                <p style="color: whitesmoke">In this website you'll find both visual and technical information about my latest work, I hope you enjoy it and if there's anything you'd like to know, you have all my contact info down below.</p>
+            <div class="mycontainer text-center">
+                <p class="my-text" style="color: whitesmoke"> I work on every new rig as if they were my own, keeping the main focus on acustics, cooling and performance while still being aesthetically pleasing.</p>
+                <p class="my-text" style="color: whitesmoke">In this website you'll find both visual and technical information about my latest work, I hope you enjoy it and if there's anything you'd like to know, you have all my contact info down below.</p>
             </div>
             <br>
             
@@ -86,8 +91,8 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-lg-6" style="padding: 14px;">
-                        <h2 style="color: whitesmoke">Clean & tidy</h2>
-                        <p style="color: whitesmoke">All builds are proffesionally cable managed keeping everything as hidden and tidy as possible. This way, a clean aesthetic can be achieved while keeping cables out of the way for airflow and fans in certain scenarios such us SFF builds.</p>
+                        <h2 class="blue-text">Clean & tidy</h2>
+                        <p class="my-text" style="color: whitesmoke">All builds are proffesionally cable managed keeping everything as hidden and tidy as possible. This way, a clean aesthetic can be achieved while keeping cables out of the way for airflow and fans in certain scenarios such us SFF builds.</p>
                         <!--<a class="btn btn-light btn-sm" href="html/builds.html">Go to build</a>-->
                         <br>
                         <div class="container text-center">
@@ -127,7 +132,7 @@
             </div>
             <br>
             <br>
-        </div>
+        </main>
         
         <!-- CV download -->
         <div class="container text-center">
