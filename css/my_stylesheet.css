@@ -5,6 +5,13 @@
     
 }
 
+.half {
+    max-width: 50%;
+}
+
+.spacer {
+    height: 10em;
+}
 
 /* media container */
 .media-container{
@@ -32,15 +39,24 @@
 
 .my-text {
     font-size: 1.2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
 }
 
 h1 {
     margin-bottom: 0.6em!important;
+    text-align: left;
+    padding-left: 20px;
 }
 
 h2 {
     font-size: 1.6em!important;
-     margin-bottom: 0.6em!important;
+    margin-bottom: 0.6em!important;
+}
+
+.padding {
+    padding-left: 20px;
 }
 
 .blue-text {
@@ -51,7 +67,7 @@ h2 {
 
 .fixed-ban{
     background: url(../images/1x1-4000x/closeup-blue.jpg);
-    height: 71em;
+    height: 70em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -150,7 +166,7 @@ h2 {
     color: #cccccc!important
 }
 .navbar-brand img {
-    height: 3em;
+    height: 2.5em;
     margin-left: 20px;
 }
 @media only screen and (max-width: 1000px){
@@ -198,7 +214,40 @@ h2 {
         padding-left: 1em;
         padding-right: 1em;
     }
-    
+    .card-picture {
+        margin-bottom: 0px!important;
+    }
+
+    .card-picture img {
+        max-height: 90%!important;
+        transition: 0.3s;
+    }
+    .card-item {
+        text-align: center;
+        margin-bottom: 3em!important;
+    }
+    .spacer {
+        height: 5em;
+    }
+    .cards-container {
+        
+    }
+    .half {
+        max-width: inherit;
+    }
+    .e2pack-container {
+        justify-content: center;
+    }
+    .e2pack-item img{
+        max-width: 100%!important;
+        height: auto!important;
+        margin-bottom: 0em;
+        margin-top: 0em;
+    }
+    .e2pack-item {
+        margin-top: 2em!important;
+        margin-bottom: 2em!important;
+    }
 }
 body{
     /*background-image: linear-gradient(-90deg, #8B4E90, #EA488C)*/
@@ -341,3 +390,118 @@ footer{
     border-color: whitesmoke;
     box-shadow: 0px 0px 24px rgba(180, 232, 255, 0.96);
 }
+
+
+
+/*cards stuff */
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.card-item {
+    margin: 1em;
+}
+
+.card-item p {
+    color: dimgrey;
+}
+
+.card-picture {
+    height: 25em;
+    width: 25em;
+    margin-bottom: .8em;
+}
+
+.card-picture img {
+    max-height: 25em;
+    transition: 0.3s;
+}
+
+.card-picture img:hover {
+    cursor: pointer;
+    filter: brightness(50%) blur(3px);
+}
+
+.card-picture a:hover + p {
+    visibility: visible;
+}
+
+.floating-p{
+    position: absolute;
+    font-size: 2.7em;
+    margin-top: -5.2em;
+    margin-left: 2.8em;
+    pointer-events: none;
+    visibility: hidden;
+    color: whitesmoke!important;
+}
+
+.e2pack-container {
+    max-width: 1580px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.e2pack-item {
+    margin-top: 3em;
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.e2pack-item img{
+    height: 48em;
+}
+
+.e2-text {
+    width: 35em;
+    
+}
+.e2photo {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
