@@ -248,6 +248,9 @@ h2 {
         margin-top: 2em!important;
         margin-bottom: 2em!important;
     }
+    .li-underline {
+        background-color: rgba(255, 0, 0, 0)!important;
+    }
 }
 body{
     /*background-image: linear-gradient(-90deg, #8B4E90, #EA488C)*/
@@ -463,12 +466,15 @@ footer{
 
 .e2-text {
     width: 35em;
+    margin: 0;
     
 }
 .e2photo {
-    
+    margin: 0;
 }
-
+.e2photo img {
+    height: 64em;
+}
 
 
 
