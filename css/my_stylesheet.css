@@ -215,11 +215,11 @@ h2 {
         padding-right: 1em;
     }
     .card-picture {
-        margin-bottom: 0px!important;
+        width: auto!important;
     }
 
     .card-picture img {
-        max-height: 90%!important;
+        max-width: 100%!important;
         transition: 0.3s;
     }
     .card-item {
@@ -415,8 +415,6 @@ footer{
 }
 
 .card-picture {
-    height: 25em;
-    width: 25em;
     margin-bottom: .8em;
 }
 
