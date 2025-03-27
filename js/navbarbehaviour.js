@@ -14,7 +14,7 @@ if (currentPageUnderline){
     currentPageUnderline.style.display = "none";
     currentPageUnderline.parentElement.style.backgroundColor = "rgba(126, 126, 126, 0.77)"
 }
-else alert("current page underline not found")
+
 
 // fade stuff
 function checkIfVisible(target){
