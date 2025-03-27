@@ -265,6 +265,9 @@ h2 {
     .foot-soc-par{
         margin-bottom: 3em;
     }
+    .card-picture a + p{
+        display: none;
+    }
 }
 body{
     /*background-image: linear-gradient(-90deg, #8B4E90, #EA488C)*/
