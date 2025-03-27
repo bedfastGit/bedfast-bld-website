@@ -75,6 +75,7 @@ h2 {
     background-size: 160em auto;
     background-repeat: no-repeat;
     background-position: center top -10em;
+    background-attachment: fixed;
 }
 .fixed-ban-vid{
     background-color: rgba(0, 0, 0, 0.51);
@@ -137,6 +138,7 @@ h2 {
     font-weight: 400;
     margin-top: auto;
     margin-bottom: auto;
+    transition: .3s;
 }
 
 .nav-item {
@@ -248,8 +250,20 @@ h2 {
         margin-top: 2em!important;
         margin-bottom: 2em!important;
     }
+    .e2photo{
+        margin-left: 0!important;
+    }
     .li-underline {
         background-color: rgba(255, 0, 0, 0)!important;
+    }
+    .foot-img {
+        display: none;
+    }
+    .foot-text h2{
+        margin-top: 1em!important;
+    }
+    .foot-soc-par{
+        margin-bottom: 3em;
     }
 }
 body{
@@ -469,6 +483,7 @@ footer{
 }
 .e2photo {
     margin: 0;
+    margin-left: 15px;
 }
 .e2photo img {
     height: 64em;
@@ -478,24 +493,94 @@ footer{
 
 
 
+.fadee{
+    opacity: 0;
+    transition: 1.2s;
+    animation-timing-function: ease-out;
+    transform: scale(90%);
+    transition-delay: 0.3s;
+}
+
+.expand{
+    opacity: 0;
+    transition: 1.5s;
+    animation-timing-function: ease-out;
+    transform: scale(90%);
+    transition-delay: 0.3s;
+}
 
 
 
+.myfooter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+}
+.foot-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 3em;
+}
+.foot-text h2{
+    
+}
+.foot-text img {
+    height: 3em;
+    margin-bottom: 1em;
+}
+.foot-img{
+    
+}
+.foot-img img{
+    height: 40em;
+}
+.li-footer{
+    list-style-type: none;
+}
+.li-footer a{
+    color: whitesmoke;
+    transition: 0.3s;
+    font-size: .9em;
+}
 
+.li-footer a:hover {
+    text-decoration: none;
+    color: rgb(41, 189, 255);
+}
 
+.foot-socimgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
 
+.foot-soc-par {
+    background-color: #080808;
+    border-radius: .2em;
+    height: 2em;
+    width: 2em;
+    margin-right: .4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: .3s;
+}
 
+.foot-soc-par img{
+    height: 1.8em;
+    margin: auto;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
+.foot-soc-par:hover{
+    filter: invert();
+    
+}
 
 
 
